@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Photo feed with Bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Bootstrap</title>
+</head>
+
+<body>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" navbar-light bg-secondary><i class="fa-brands fa-instagram fa-2xl"></i>Instagram</a>
+            <form class="d-flex" role="search">
+
+                <!--Boton del modal-->
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Crear nuevo post
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Crear nuevo post</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                Texto de tu nueva publicación...
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                <button type="button" class="btn btn-success">Publicar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Boton dropdown-->
+
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <i class="fa-solid fa-gear fa-xl"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-left">
+                        <li><a class="dropdown-item" href="#">Perfil</a></li>
+                        <li><a class="dropdown-item" href="#">Acceso</a></li>
+                        <li><a class="dropdown-item" href="#">Privacidad y ajustes</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" text-danger>Cerrar sesión</a></li>
+                    </ul>
+                </div>
+            </form>
+        </div>
+    </nav>
+    <div class="container text-center">
+        <div class="row">
+
+            <div class="col-3">
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <!-- grid cuadricula -->
+                            <button class="btn btn-light btn-block"><i
+                                    class="fa-solid fa-table-cells fa-2xl"></i></button>
+                        </div>
+                        <div class="col-md-6">
+                            <button class="btn btn-light btn-block"><i
+                                    class="fa-solid fa-square fa-2xl"></i></i></button>
+                            <!-- grid cuadrado -->
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <div class="container-img" di-flex="justify-content">
+        <div class="row">
+            <div class="col"><img
+                    src="https://media.istockphoto.com/id/1344923073/es/foto/un-lago-en-forma-de-huellas-humanas-en-medio-de-un-frondoso-bosque-como-met%C3%A1fora-del-impacto.jpg?s=612x612&w=0&k=20&c=J_ySlyvYEyz5Ao6fWUB4wIwBYpG6xCEcXvXrMNtZxnY=">
+            </div>
+            <div class="col"><img
+                    src="https://media.istockphoto.com/id/1349606988/es/foto/calabazas-para-el-d%C3%ADa-de-acci%C3%B3n-de-gracias-sobre-fondo-de-madera.jpg?s=612x612&w=0&k=20&c=OHgO4WIVWiG4H4fj-M-_TfQ7NwFdsevZfUW-pmwrQ_0=">
+            </div>
+            <div class="col-4"><img
+                    src="https://media.istockphoto.com/id/1215127633/es/foto/nariz-falsa-para-la-foto-de-stock-de-conejo-lindo.jpg?s=612x612&w=0&k=20&c=iy9cCbKuz8RxnRWokXb1AqP901kpgMKvdeoHy66gX24=">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4"><img
+                    src="https://media.istockphoto.com/id/1462151129/es/foto/prevenir-el-calentamiento-global-ni%C3%B1a-plantando-un-peque%C3%B1o-%C3%A1rbol.jpg?s=612x612&w=0&k=20&c=70bfBwvfwSciapLwo39p6CZEt1Qy2WxYxmCxaQXQ7GI=">
+            </div>
+            <div class="col-4"><img
+                    src="https://media.istockphoto.com/id/1344413214/es/foto/m%C3%A9dico-que-escucha-el-coraz%C3%B3n-de-los-ni%C3%B1os-peque%C3%B1os.jpg?s=612x612&w=0&k=20&c=Fv6bGdGv-tpPlTzWWTM8u_sFKiMFdy6NvyBRmsa2_EI=">
+            </div>
+            <div class="col-4"><img
+                    src="https://media.istockphoto.com/id/1330547182/es/foto/siempre-estamos-hambrientos-de-%C3%A9xito.jpg?s=612x612&w=0&k=20&c=dvKPmdK7NdexXvpAcdGoT-GkPvGQw5DpIC-j--cHZ7c=">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4"><img
+                    src="https://media.istockphoto.com/id/607256964/es/vector/fuente-decorativa-vintage-llamada-amber-taste.jpg?s=612x612&w=0&k=20&c=IPif-Vagz8tDPymY4fOxNTDCJV6K75bJSpIUlIR8dU0=">
+            </div>
+            <div class="col-4"><img
+                    src="https://media.istockphoto.com/id/1413052093/es/foto/hojas-de-arce-de-oto%C3%B1o-de-marco-completo-colorido-arreglo-de-oto%C3%B1o.jpg?s=612x612&w=0&k=20&c=rVz9G5sfF_SAVSC82ov8ApFn3-f3JhmmNOnqFJc7V08=">
+            </div>
+            <div class="col-4"><img
+                    src="https://media.istockphoto.com/id/178149253/es/foto/espacio-profundo-de-fondo.jpg?s=612x612&w=0&k=20&c=6xWIbkk18IrLShPj1AyUSfjy4EznbIoHs6lEn6Le2o8=">
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>
