@@ -16,7 +16,8 @@
 <body>
     <nav class="navbar bg-body-tertiary">
         <div class="container-fluid">
-            <a class="navbar-brand" navbar-light bg-secondary><i class="fa-brands fa-instagram fa-2xl"></i>Instagram</a>
+            <a class="navbar-brand" navbar-light bg-secondary><i
+                    class="fa-brands fa-instagram fa-2xl"></i><strong>Instagram</strong></a>
             <form class="d-flex" role="search">
 
                 <!--Boton del modal-->
@@ -26,7 +27,7 @@
                 </button>
 
                 <!-- Modal -->
-                
+
                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                     aria-hidden="true">
                     <div class="modal-dialog">
@@ -54,79 +55,183 @@
                         aria-expanded="false">
                         <i class="fa-solid fa-gear fa-xl"></i>
                     </button>
-                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                    <ul class="dropdown-menu dropdown-menu-end">
                         <li><a class="dropdown-item" href="#">Perfil</a></li>
                         <li><a class="dropdown-item" href="#">Acceso</a></li>
                         <li><a class="dropdown-item" href="#">Privacidad y ajustes</a></li>
                         <li>
                             <hr class="dropdown-divider">
                         </li>
-                        <li><a class="dropdown-item" text-danger>Cerrar sesión</a></li>
+                        <li><a class="dropdown-item text-danger">Cerrar sesión</a></li>
                     </ul>
                 </div>
             </form>
         </div>
     </nav>
-    <div class="container text-center">
-        <div class="row">
 
-            <div class="col-3">
+    <!--Botones del grid-->
 
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6">
+    <ul class="nav nav-pills justify-content-center mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="btn btn-link btn-icon active" id="pills-grid3-tab" data-bs-toggle="pill"
+                data-bs-target="#pills-grid3" type="button" role="tab" aria-controls="pills-grid3" aria-selected="true">
+                <i class="fa-solid fa-table-cells text-primary"></i>
+            </button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="btn btn-link btn-icon " id="pills-grid1-tab" data-bs-toggle="pill"
+                data-bs-target="#pills-grid1" type="button" role="tab" aria-controls="pills-grid1"
+                aria-selected="false">
+                <i class="fas fa-square text-primary"></i>
+            </button>
+        </li>
+    </ul>
 
-                            <!-- grid cuadricula -->
+    <!--contenido del grid-->
 
-                            <button class="btn btn-light btn-block"><i
-                                    class="fa-solid fa-table-cells fa-2xl"></i></button>
+    <div class="tab-content" id="pills-tabContent">
+        <!-- Grid 1 -->
+        <div class="tab-pane fade" id="pills-grid1" role="tabpanel" aria-labelledby="pills-grid1-tab">
+            <div class="row justify-content-center mt-3 mb-3">
+                <div class="col-lg-4 col-md-6 col-sm-10">
+                    <div class="card border-gray">
+                        <div class="card-body d-flex justify-content-between align-items-center">
+                            <h5 class="card-title fw-bold">Huella</h5>
+                            <p class="card-text text-end">07/09</p>
                         </div>
-                        <div class="col-md-6">
-                            <button class="btn btn-light btn-block"><i
-                                    class="fa-solid fa-square fa-2xl"></i></i></button>
 
-                            <!-- grid cuadrado -->
-
+                        <img src="https://media.istockphoto.com/id/1344923073/es/foto/un-lago-en-forma-de-huellas-humanas-en-medio-de-un-frondoso-bosque-como-met%C3%A1fora-del-impacto.jpg?s=612x612&w=0&k=20&c=J_ySlyvYEyz5Ao6fWUB4wIwBYpG6xCEcXvXrMNtZxnY="
+                            class="img-fluid">
+                        <div class="card-body">
+                            <p class="card-text fw-bold">Le gusta a <b>103</b> personas.</p>
+                            <p class="card-text text-muted">Que importante es dejar una huella verde en el planeta,
+                                cuidemosle!</p>
                         </div>
                     </div>
                 </div>
-
-
+            </div>
+            <div class="row justify-content-center mt-2 mb-2">
+                <div class="col-lg-4 col-md-6 col-sm-10">
+                    <div class="card border-gray">
+                        <div class="card-body d-flex justify-content-between align-items-center">
+                            <h5 class="card-title fw-bold">Otoño</h5>
+                            <p class="card-text text-end">15/10</p>
+                        </div>
+                        <img src="https://media.istockphoto.com/id/1349606988/es/foto/calabazas-para-el-d%C3%ADa-de-acci%C3%B3n-de-gracias-sobre-fondo-de-madera.jpg?s=612x612&w=0&k=20&c=OHgO4WIVWiG4H4fj-M-_TfQ7NwFdsevZfUW-pmwrQ_0="
+                            class="img-fluid">
+                        <div class="card-body">
+                            <p class="card-text fw-bold">Le gusta a <b>187</b> personas.</p>
+                            <p class="card-text text-muted">Por fin llega el otoño! Toca comer muchos pasteles y muchas
+                                recetas<br>
+                                con calabaza asada...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center mt-2 mb-2">
+                <div class="col-lg-4 col-md-6 col-sm-10">
+                    <div class="card border-gray">
+                        <div class="card-body d-flex justify-content-between align-items-center">
+                            <h5 class="card-title fw-bold">Manualidades</h5>
+                            <p class="card-text text-end">15/11</p>
+                        </div>
+                        <img src="https://media.istockphoto.com/id/1215127633/es/foto/nariz-falsa-para-la-foto-de-stock-de-conejo-lindo.jpg?s=612x612&w=0&k=20&c=iy9cCbKuz8RxnRWokXb1AqP901kpgMKvdeoHy66gX24="
+                            class="img-fluid">
+                        <div class="card-body">
+                            <p class="card-text fw-bold">Le gusta a <b>217</b>personas.</p>
+                            <p class="card-text text-muted">Con este frio lo que tocan son muchas manualidades!!</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <div class="container-img" di-flex="justify-content">
-        <div class="row mb-3">
-            <div class="col"><img
-                    src="https://media.istockphoto.com/id/1344923073/es/foto/un-lago-en-forma-de-huellas-humanas-en-medio-de-un-frondoso-bosque-como-met%C3%A1fora-del-impacto.jpg?s=612x612&w=0&k=20&c=J_ySlyvYEyz5Ao6fWUB4wIwBYpG6xCEcXvXrMNtZxnY=">
-            </div>
-            <div class="col"><img
-                    src="https://media.istockphoto.com/id/1349606988/es/foto/calabazas-para-el-d%C3%ADa-de-acci%C3%B3n-de-gracias-sobre-fondo-de-madera.jpg?s=612x612&w=0&k=20&c=OHgO4WIVWiG4H4fj-M-_TfQ7NwFdsevZfUW-pmwrQ_0=">
-            </div>
-            <div class="col-4"><img
-                    src="https://media.istockphoto.com/id/1215127633/es/foto/nariz-falsa-para-la-foto-de-stock-de-conejo-lindo.jpg?s=612x612&w=0&k=20&c=iy9cCbKuz8RxnRWokXb1AqP901kpgMKvdeoHy66gX24=">
+    </div>
+
+    <div class="tab-pane fade show active" id="pills-grid3" role="tabpanel" aria-labelledby="pills-grid3-tab">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8 col-lg-6">
+                <div class="row row-cols-1 row-cols-md-3">
+                    <div class="col mb-2">
+                        <img src="https://media.istockphoto.com/id/1344923073/es/foto/un-lago-en-forma-de-huellas-humanas-en-medio-de-un-frondoso-bosque-como-met%C3%A1fora-del-impacto.jpg?s=612x612&w=0&k=20&c=J_ySlyvYEyz5Ao6fWUB4wIwBYpG6xCEcXvXrMNtZxnY="" class="img-fluid" alt="Imagen del post">
+                    </div>
+                    <div class="col mb-2">
+                        <img src="https://media.istockphoto.com/id/1349606988/es/foto/calabazas-para-el-d%C3%ADa-de-acci%C3%B3n-de-gracias-sobre-fondo-de-madera.jpg?s=612x612&w=0&k=20&c=OHgO4WIVWiG4H4fj-M-_TfQ7NwFdsevZfUW-pmwrQ_0=" class="img-fluid" alt="Imagen del post">
+                    </div>
+                    <div class="col mb-2">
+                        <img src="https://media.istockphoto.com/id/1215127633/es/foto/nariz-falsa-para-la-foto-de-stock-de-conejo-lindo.jpg?s=612x612&w=0&k=20&c=iy9cCbKuz8RxnRWokXb1AqP901kpgMKvdeoHy66gX24=" class="img-fluid" alt="Imagen del post">
+                    </div>
+                    <div class="col mb-2">
+                        <img src="https://media.istockphoto.com/id/1462151129/es/foto/prevenir-el-calentamiento-global-ni%C3%B1a-plantando-un-peque%C3%B1o-%C3%A1rbol.jpg?s=612x612&w=0&k=20&c=70bfBwvfwSciapLwo39p6CZEt1Qy2WxYxmCxaQXQ7GI=" class="img-fluid" alt="Imagen del post">
+                    </div>
+                    <div class="col mb-2">
+                        <img src="https://media.istockphoto.com/id/1344413214/es/foto/m%C3%A9dico-que-escucha-el-coraz%C3%B3n-de-los-ni%C3%B1os-peque%C3%B1os.jpg?s=612x612&w=0&k=20&c=Fv6bGdGv-tpPlTzWWTM8u_sFKiMFdy6NvyBRmsa2_EI=" class="img-fluid" alt="Imagen del post">
+                    </div>
+                    <div class="col mb-2">
+                        <img src="https://media.istockphoto.com/id/1330547182/es/foto/siempre-estamos-hambrientos-de-%C3%A9xito.jpg?s=612x612&w=0&k=20&c=dvKPmdK7NdexXvpAcdGoT-GkPvGQw5DpIC-j--cHZ7c=" class="img-fluid" alt="Imagen del post">
+                    </div>
+                    <div class="col mb-2">
+                        <img src="https://media.istockphoto.com/id/607256964/es/vector/fuente-decorativa-vintage-llamada-amber-taste.jpg?s=612x612&w=0&k=20&c=IPif-Vagz8tDPymY4fOxNTDCJV6K75bJSpIUlIR8dU0=" class="img-fluid" alt="Imagen del post">
+                    </div>
+                    <div class="col mb-2">
+                        <img src="https://media.istockphoto.com/id/1413052093/es/foto/hojas-de-arce-de-oto%C3%B1o-de-marco-completo-colorido-arreglo-de-oto%C3%B1o.jpg?s=612x612&w=0&k=20&c=rVz9G5sfF_SAVSC82ov8ApFn3-f3JhmmNOnqFJc7V08=" class="img-fluid" alt="Imagen del post">
+                    </div>
+                    <div class="col mb-2">
+                        <img src="https://media.istockphoto.com/id/178149253/es/foto/espacio-profundo-de-fondo.jpg?s=612x612&w=0&k=20&c=6xWIbkk18IrLShPj1AyUSfjy4EznbIoHs6lEn6Le2o8=" class="img-fluid" alt="Imagen del post">
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="row mb-3">
-            <div class="col-4"><img
-                    src="https://media.istockphoto.com/id/1462151129/es/foto/prevenir-el-calentamiento-global-ni%C3%B1a-plantando-un-peque%C3%B1o-%C3%A1rbol.jpg?s=612x612&w=0&k=20&c=70bfBwvfwSciapLwo39p6CZEt1Qy2WxYxmCxaQXQ7GI=">
-            </div>
-            <div class="col-4"><img
-                    src="https://media.istockphoto.com/id/1344413214/es/foto/m%C3%A9dico-que-escucha-el-coraz%C3%B3n-de-los-ni%C3%B1os-peque%C3%B1os.jpg?s=612x612&w=0&k=20&c=Fv6bGdGv-tpPlTzWWTM8u_sFKiMFdy6NvyBRmsa2_EI=">
-            </div>
-            <div class="col-4"><img
-                    src="https://media.istockphoto.com/id/1330547182/es/foto/siempre-estamos-hambrientos-de-%C3%A9xito.jpg?s=612x612&w=0&k=20&c=dvKPmdK7NdexXvpAcdGoT-GkPvGQw5DpIC-j--cHZ7c=">
+    </div>
+
+    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+        <div class="row d-flex justify-content-center">
+            <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4 p-0 border border-light-emphasis justify-content-center">
+                <div class="d-flex justify-content-between align-items-center p-1">
+                    <h4 class="m-0">Header</h4>
+                    <p class="m-0">15/30</p>
+                </div>
+                <div>
+                    <img src="https://media.istockphoto.com/id/1344923073/es/foto/un-lago-en-forma-de-huellas-humanas-en-medio-de-un-frondoso-bosque-como-met%C3%A1fora-del-impacto.jpg?s=612x612&w=0&k=20&c=J_ySlyvYEyz5Ao6fWUB4wIwBYpG6xCEcXvXrMNtZxnY="
+                        class="img-fluid">
+                </div>
+                <div class="p-1">
+                    <p class="fs-6 mb-0"><b>Likes</b></p>
+                    <p class="lh-1">Header Foot</p>
+                </div>
             </div>
         </div>
-        <div class="row mb-3">
-            <div class="col-4"><img
-                    src="https://media.istockphoto.com/id/607256964/es/vector/fuente-decorativa-vintage-llamada-amber-taste.jpg?s=612x612&w=0&k=20&c=IPif-Vagz8tDPymY4fOxNTDCJV6K75bJSpIUlIR8dU0=">
+        <div class="row justify-content-center">
+            <div
+                class="col-sm-12 col-md-8 col-lg-6 col-xl-4 p-0 border border-light-emphasis my-3 justify-content-center">
+                <div class="d-flex justify-content-between align-items-center p-1">
+                    <h4 class="m-0">Header</h4>
+                    <p class="m-0">15/30</p>
+                </div>
+                <div class="d-flex">
+                    <img src="https://media.istockphoto.com/id/1349606988/es/foto/calabazas-para-el-d%C3%ADa-de-acci%C3%B3n-de-gracias-sobre-fondo-de-madera.jpg?s=612x612&w=0&k=20&c=OHgO4WIVWiG4H4fj-M-_TfQ7NwFdsevZfUW-pmwrQ_0="
+                        class="img-fluid">
+                </div>
+                <div class="p-1">
+                    <p class="fs-6 mb-0"><b>Likes</b></p>
+                    <p class="lh-1">Header Foot</p>
+                </div>
             </div>
-            <div class="col-4"><img
-                    src="https://media.istockphoto.com/id/1413052093/es/foto/hojas-de-arce-de-oto%C3%B1o-de-marco-completo-colorido-arreglo-de-oto%C3%B1o.jpg?s=612x612&w=0&k=20&c=rVz9G5sfF_SAVSC82ov8ApFn3-f3JhmmNOnqFJc7V08=">
-            </div>
-            <div class="col-4"><img
-                    src="https://media.istockphoto.com/id/178149253/es/foto/espacio-profundo-de-fondo.jpg?s=612x612&w=0&k=20&c=6xWIbkk18IrLShPj1AyUSfjy4EznbIoHs6lEn6Le2o8=">
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-md-8 col-lg-6 col-xl-4 p-0 border border-light-emphasis justify-content-center">
+                <div class="d-flex justify-content-between align-items-center p-1">
+                    <h4 class="m-0">Header</h4>
+                    <p class="m-0">15/30</p>
+                </div>
+                <div>
+                    <img
+                        src="https://media.istockphoto.com/id/1215127633/es/foto/nariz-falsa-para-la-foto-de-stock-de-conejo-lindo.jpg?s=612x612&w=0&k=20&c=iy9cCbKuz8RxnRWokXb1AqP901kpgMKvdeoHy66gX24=">
+                </div>
+                <div class="p-1">
+                    <p class="fs-6 mb-0"><b>Likes</b></p>
+                    <p class="lh-1">Header Foot</p>
+                </div>
             </div>
         </div>
     </div>
